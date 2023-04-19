@@ -1,0 +1,60 @@
+# Initialize variables for each subject
+subject1 = input("Enter subject 1 name: ")
+subject2 = input("Enter subject 2 name: ")
+subject3 = input("Enter subject 3 name: ")
+subject4 = input("Enter subject 4 name: ")
+subject5 = input("Enter subject 5 name: ")
+
+# Get the number of classes held and attended for each subject
+classes_held1 = int(input("Enter number of classes held for " + subject1 + ": "))
+classes_attended1 = int(input("Enter number of classes attended for " + subject1 + ": "))
+
+classes_held2 = int(input("Enter number of classes held for " + subject2 + ": "))
+classes_attended2 = int(input("Enter number of classes attended for " + subject2 + ": "))
+
+classes_held3 = int(input("Enter number of classes held for " + subject3 + ": "))
+classes_attended3 = int(input("Enter number of classes attended for " + subject3 + ": "))
+
+classes_held4 = int(input("Enter number of classes held for " + subject4 + ": "))
+classes_attended4 = int(input("Enter number of classes attended for " + subject4 + ": "))
+
+classes_held5 = int(input("Enter number of classes held for " + subject5 + ": "))
+classes_attended5 = int(input("Enter number of classes attended for " + subject5 + ": "))
+
+# Calculate attendance percentage for each subject
+attendance_percentage1 = (classes_attended1 / classes_held1) * 100
+attendance_percentage2 = (classes_attended2 / classes_held2) * 100
+attendance_percentage3 = (classes_attended3 / classes_held3) * 100
+attendance_percentage4 = (classes_attended4 / classes_held4) * 100
+attendance_percentage5 = (classes_attended5 / classes_held5) * 100
+
+# Print the attendance percentage for each subject
+print("Attendance percentage for " + subject1 + ": {:.2f}%".format(attendance_percentage1))
+print("Attendance percentage for " + subject2 + ": {:.2f}%".format(attendance_percentage2))
+print("Attendance percentage for " + subject3 + ": {:.2f}%".format(attendance_percentage3))
+print("Attendance percentage for " + subject4 + ": {:.2f}%".format(attendance_percentage4))
+print("Attendance percentage for " + subject5 + ": {:.2f}%".format(attendance_percentage5))
+
+# Check attendance and print message accordingly
+if attendance_percentage1 >= 75:
+    print(subject1 + " attendance is safe.")
+elif 60 <= attendance_percentage1 < 75:
+    print(subject1 + " attendance is " + "{:.2f}%".format(attendance_percentage1) + ". Attend a few more classes to be safe.")
+else:
+    print(subject1 + " attendance is not safe.")
+
+if attendance_percentage2 >= 75:
+    print(subject2 + " attendance is safe.")
+elif 60 <= attendance_percentage2 < 75:
+    print(subject2 + " attendance is " + "{:.2f}%".format(attendance_percentage2) + ". Attend a few more classes to be safe.")
+else:
+    print(subject2 + " attendance is not safe.")
+
+if attendance_percentage3 >= 75:
+    print(subject3 + " attendance is safe.")
+elif 60 <= attendance_percentage3 < 75:
+    print(subject3 + " attendance is " + "{:.2f}%".format(attendance_percentage3) + ". Attend a few more classes to be safe.")
+else:
+    print(subject3 + " attendance is not safe.")
+
+if attendance
